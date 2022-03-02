@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ED78QX478T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ED78QX478T');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="Map overview of top US cities for software engineers.">
+  <title>Top Cities</title>
+  <link rel="stylesheet" type="text/css" href="build/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+</head>
+
+<body>
+  <main class="main">
+      <div class="overlay"></div>
+      <div class="map-container">
+        <h1>Top 10 US Cities for Software Engineers</h1>
+        <div id="map"></div>
+        <p class="attribution">Sources: 
+          <a href="https://www.indeed.com/career-advice/finding-a-job/best-city-for-software-engineers" tabindex="1" target="_blank">Indeed</a>,
+          <a href="https://www.zippia.com/software-engineer-jobs/best-states" tabindex="1" target="_blank">Zippia</a>
+        </p>
+      </div>
+      <script src="index.js"></script>
+    
+  </main>  
+</body>
+</html>
