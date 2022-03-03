@@ -78,3 +78,25 @@ $light-white: #EEEEEE;
     }
   }
 }
+
+/* Custom style for Leaflet library */
+.leaflet-popup {
+  width: 200px;
+
+  .leaflet-popup-content {
+    white-space: pre;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .main .map-container h1 {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .main .map-container h1 {
+    font-size: 0.9rem;
+  }
+}
